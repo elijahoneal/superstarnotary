@@ -39,12 +39,12 @@ form{
   display:flex;
   width:100%;
   justify-content:space-between;
-  align-items:start;
+  align-items:center;
   img {
       width: 40%;
       margin:0;
       padding:0;
-      border: 1px solid red;
+
   }
   form {
       width: 55%;
