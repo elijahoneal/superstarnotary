@@ -44,10 +44,10 @@ form{
       width: 40%;
       margin:0;
       padding:0;
+      border: 1px solid red;
   }
   form {
-      width: 50%;
-      height: 25rem;
+      width: 55%;
       input , button{
         height: 2.5rem;
       }
