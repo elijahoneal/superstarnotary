@@ -4,6 +4,20 @@ import styled from "styled-components";
 export const About = styled.article`
     font-size:1.1rem;
     margin: 2rem 0;
+    @media only screen and (min-width: 768px) {
+        figure  {
+            img {
+                width: 45%;
+            }
+            p{
+                width: 45%;
+            }
+            display:flex;
+            justify-content:space-around;
+            flex-direction: row-reverse;
+            align-items:center;
+        }
+     }
 `
 
 export const Services = styled.section`
@@ -26,6 +40,12 @@ margin: 2rem 0;
         width: 100%;
     }
     @media only screen and (min-width: 768px) {
+        img {
+           width: 100%;
+           height: 15rem;
+           object-fit:cover;
+
+        }
         section {
             display:flex;
             flex-flow: row wrap;
@@ -44,6 +64,7 @@ margin: 2rem 0;
                 width: 45%;
                 margin-bottom: 2rem;
             }
+            
         }
         
      }

@@ -1,6 +1,8 @@
 import './App.css';
 import styled from 'styled-components';
 import Logo from './images/Logo.png'
+import notary from './images/notary.jpg'
+import sign from './images/signing.jpg'
 import Contact from './components/Contacts'
 import { About , Services , Testimonials} from './components/Style'
 import { FaStar , FaPhone } from 'react-icons/fa'
@@ -68,12 +70,17 @@ function App() {
       <main>
         <About>
           <h2>About</h2>
-          <p>MOBILE NOTARY SERVICES Offering General Notary Public services, specializing in Mortgage Loan Closings. 
+          <figure>
+            <img src= {notary} alt="notary stamp"/>
+            <p>MOBILE NOTARY SERVICES Offering General Notary Public services, specializing in Mortgage Loan Closings. 
             **NNA Certified, YEARLY background checked, INSURED & BONDED** Providing unrushed, quality customer service. 
             Can meet at residential, business, jail, nursing home or hospital for document signing. Call for scheduling!</p>
+          </figure>
+          
         </About>
         <Services>
           <h2>Services</h2>
+            <img src= {sign} alt="notary stamp"/>
           <section>
             <article>
                 <div>
