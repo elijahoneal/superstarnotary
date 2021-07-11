@@ -41,9 +41,9 @@ form{
   justify-content:space-between;
   align-items:start;
   img {
-      width: 45%;
-      height: 23rem;
+      width: 40%;
       margin:0;
+      padding:0;
   }
   form {
       width: 50%;
