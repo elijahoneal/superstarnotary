@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Logo from './images/Logo.png'
 import Contact from './components/Contacts'
 import { About , Services , Testimonials} from './components/Style'
-import { FaStar } from 'react-icons/fa'
+import { FaStar , FaPhone } from 'react-icons/fa'
 
 const Wrapper = styled.div`
 width:90%;
@@ -15,16 +15,44 @@ h2 {
   font-size: 2.4rem;
   color: #6E6E6E;
   border-bottom: 0.4rem dashed #E4C74E;
+  padding-bottom:0.5rem;
+  margin: 2rem auto 1rem;
 }
 img {
   width:100%;
   height:auto;
+  margin: 1rem auto;
+  @media only screen and (min-width: 768px) {
+    width:70%;
+  }
+  @media only screen and (min-width: 1024px) {
+      width: 40%;
+      
+  }
+}
+span {
+  font-weight: 600;
+}
+header {
+  border-bottom: 0.4rem solid #E4C74E;
 }
 footer {
   background-color:#6E6E6E;
   color: #fff;
   text-align:center;
-  padding: 0.25rem auto;
+  padding: 0.5rem;
+  font-weight: 300;
+  font-size: 1rem;
+  font-style: italic;
+  @media only screen and (min-width: 768px) {
+    display:flex;
+    justify-content:center;
+    align-items:baseline;
+    p{
+      margin:0 1rem;
+    }
+  }
+
 }
 `
 const star = {
@@ -80,18 +108,21 @@ function App() {
         </Services>
         <Testimonials>
           <h2>Testimonials</h2>
-          <article>
-            <h3>Tom McCarron <FaStar style={star}/> <FaStar style={star}/> <FaStar style={star}/> <FaStar style={star}/> <FaStar style={star}/> </h3>
-            <p>6 days ago<br></br>Total Pro!!!<br></br>On time and Pleasure to work with.</p>
-          </article>
-          <article>
-            <h3>GLORIA Siqueiros <FaStar style={star}/> <FaStar style={star}/> <FaStar style={star}/> <FaStar style={star}/> <FaStar style={star}/> </h3>
-            <p>very easy to work for you needs, and is more than professional, and very kind hearted.. she is a life savor.. amen will use her in the future if ever needed o and is very much responsible, very helpful thank you, <br></br>Gloria..</p>
-          </article>
-          <article>
-            <h3>Jeni eni <FaStar style={star}/> <FaStar style={star}/> <FaStar style={star}/> <FaStar style={star}/> <FaStar style={star}/> </h3>
-            <p>Awesome, professional service! Met at my home for notary. Easy peasy and affordable 😁 will use again</p>
-          </article>
+          <section>
+              <article>
+              <h3>Tom McCarron <FaStar style={star}/> <FaStar style={star}/> <FaStar style={star}/> <FaStar style={star}/> <FaStar style={star}/> </h3>
+              <p>6 days ago<br></br>Total Pro!!!<br></br>On time and Pleasure to work with.</p>
+            </article>
+            <article>
+              <h3>GLORIA Siqueiros <FaStar style={star}/> <FaStar style={star}/> <FaStar style={star}/> <FaStar style={star}/> <FaStar style={star}/> </h3>
+              <p>very easy to work for you needs, and is more than professional, and very kind hearted.. she is a life savor.. amen will use her in the future if ever needed o and is very much responsible, very helpful thank you, <br></br>Gloria..</p>
+            </article>
+            <article>
+              <h3>Jeni eni <FaStar style={star}/> <FaStar style={star}/> <FaStar style={star}/> <FaStar style={star}/> <FaStar style={star}/> </h3>
+              <p>Awesome, professional service! Met at my home for notary. Easy peasy and affordable 😁 will use again</p>
+            </article>
+          </section>
+          
         </Testimonials>
         <section>
           <h2>Contact</h2>
@@ -99,7 +130,8 @@ function App() {
         </section>
       </main>
       <footer>
-        Superstar Notary & Signing Services &copy; 2021
+        <span><FaPhone size="0.7rem"/> 602-345-1047</span>
+        <p>Superstar Notary & Signing Services &copy; 2021</p>
       </footer>
     </Wrapper>
   );

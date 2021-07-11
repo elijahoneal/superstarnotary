@@ -7,6 +7,7 @@ import FormSchema from '../validation/FormSchema'
 
 const ContactForm = styled.section`
 margin: 2rem auto;
+
 form{
     display:flex;
     flex-direction:column;
@@ -34,10 +35,10 @@ form{
 }
 @media only screen and (min-width: 768px) {
   width:70%;
-  }
-  @media only screen and (min-width: 1024px) {
-    width: 45%;
-
+}
+@media only screen and (min-width: 1024px) {
+    width: 60%;
+}
 `
 
 
@@ -84,6 +85,7 @@ const encode = (data) => {
 
     return(
         <ContactForm>
+            
             <form onSubmit={handleSubmit} name="contact" netlify-honeypot="bot-field" data-netlify="true" hidden>
                 <input type="hidden" name="form-name" value="contact" />
                 <div>{formErrors.name}</div>
@@ -114,6 +116,7 @@ const encode = (data) => {
             
                 <button disabled={disabled}>Submit</button>
             </form>
+            
         </ContactForm>
     )
 }
