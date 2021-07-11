@@ -2,12 +2,14 @@ import React, { useState , useEffect } from 'react'
 import * as Yup from 'yup'
 import styled from 'styled-components'
 import FormSchema from '../validation/FormSchema'
-
+import map from '../images/map.PNG'
 
 
 const ContactForm = styled.section`
 margin: 2rem auto;
-
+img {
+    width: 100%;
+}
 form{
     display:flex;
     flex-direction:column;
@@ -34,11 +36,28 @@ form{
     }
 }
 @media only screen and (min-width: 768px) {
-  width:70%;
+  display:flex;
+  width:100%;
+  justify-content:space-between;
+  align-items:start;
+  img {
+      width: 45%;
+      height: 23rem;
+      margin:0;
+  }
+  form {
+      width: 50%;
+      height: 25rem;
+      input , button{
+        height: 2.5rem;
+      }
+      textarea{
+            height: 10rem;
+      }
+   
+  }
 }
-@media only screen and (min-width: 1024px) {
-    width: 60%;
-}
+
 `
 
 
@@ -85,7 +104,7 @@ const encode = (data) => {
 
     return(
         <ContactForm>
-            
+           
             <form onSubmit={handleSubmit} name="contact" netlify-honeypot="bot-field" data-netlify="true" hidden>
                 <input type="hidden" name="form-name" value="contact" />
                 <div>{formErrors.name}</div>
@@ -116,7 +135,7 @@ const encode = (data) => {
             
                 <button disabled={disabled}>Submit</button>
             </form>
-            
+             <img src={map} alt="Phoenix Arizona Area" />
         </ContactForm>
     )
 }

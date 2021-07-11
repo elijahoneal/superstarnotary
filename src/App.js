@@ -12,6 +12,7 @@ width:90%;
 margin: 0 auto;
 font-family: 'Raleway', sans-serif;
 font-size: 0.9rem;
+line-height:1.3;
 h2 {
   font-family: 'Yellowtail', cursive;
   font-size: 2.4rem;
@@ -50,6 +51,7 @@ footer {
     display:flex;
     justify-content:center;
     align-items:baseline;
+    font-size: 1.1rem;
     p{
       margin:0 1rem;
     }
@@ -58,7 +60,8 @@ footer {
 }
 `
 const star = {
-  color: '#E4C74E'
+  color: '#E4C74E',
+  fontSize: '0.9rem'
 }
 function App() {
   return (
@@ -80,7 +83,10 @@ function App() {
         </About>
         <Services>
           <h2>Services</h2>
-            <img src= {sign} alt="notary stamp"/>
+          <figure>
+              <img src= {sign} alt="notary stamp"/>
+          </figure>
+          
           <section>
             <article>
                 <div>

@@ -18,6 +18,10 @@ export const About = styled.article`
             align-items:center;
         }
      }
+    @media only screen and (min-width: 1024px) {
+        line-height: 1.8rem;
+        font-size:1.3rem;
+    }
 `
 
 export const Services = styled.section`
@@ -40,12 +44,14 @@ margin: 2rem 0;
         width: 100%;
     }
     @media only screen and (min-width: 768px) {
-        img {
-           width: 100%;
-           height: 15rem;
-           object-fit:cover;
+        figure{
+            img {
+                width: 100%;
+                height: 15rem;
+                object-fit:cover;
 
-        }
+            }
+        }  
         section {
             display:flex;
             flex-flow: row wrap;
@@ -77,6 +83,10 @@ export const Testimonials = styled.section`
         border-radius: 10px;
         padding: 0.5rem 1rem;
         margin: 0.5rem auto;
+        p{
+            padding-top:0.5rem;
+          
+        }
     }    
 
     color: #fff;
@@ -93,7 +103,7 @@ export const Testimonials = styled.section`
             flex-flow: row nowrap;
             justify-content:space-evenly;
             article {
-                width: 28%;
+                width: 29%;
                 margin-bottom: 2rem;
             }
         }
