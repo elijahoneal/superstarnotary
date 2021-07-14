@@ -2,7 +2,6 @@ import React, { useState , useEffect } from 'react'
 import * as Yup from 'yup'
 import styled from 'styled-components'
 import FormSchema from '../validation/FormSchema'
-import map from '../images/map.PNG'
 
 
 const ContactForm = styled.section`
@@ -40,8 +39,9 @@ form{
   width:100%;
   justify-content:space-between;
   align-items:center;
-  img {
+  iframe {
       width: 40%;
+      height:25rem;
       margin:0;
       padding:0;
 
@@ -135,7 +135,7 @@ const encode = (data) => {
             
                 <button disabled={disabled}>Submit</button>
             </form>
-             <img src={map} alt="Phoenix Arizona Area" />
+            <iframe src="https://www.google.com/maps/d/embed?mid=1ad7KLz_R-J0NLxKo4fD8eoEBkBG9ETc0" title="General Range of Service"></iframe>
         </ContactForm>
     )
 }
