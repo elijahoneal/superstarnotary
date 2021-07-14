@@ -6,8 +6,9 @@ import FormSchema from '../validation/FormSchema'
 
 const ContactForm = styled.section`
 margin: 2rem auto;
-img {
+iframe {
     width: 100%;
+    height: 15rem;
 }
 form{
     display:flex;
