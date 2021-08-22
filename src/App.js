@@ -91,7 +91,7 @@ function App() {
             <article>
                 <div>
                   <h4> <FaStar style={star}/> Loan Signing Services</h4>
-                  <p>From $125.00</p>
+                 
                 </div>
                 <p>Home loan packages- can perform Purchase/Seller files, VA/FHA, Refinance, HELOC. Will print loan documents and meet at your desired location for signing. 
                   *Mileage could apply if out of normal range</p>
@@ -99,14 +99,14 @@ function App() {
             <article>
                 <div>
                   <h4> <FaStar style={star}/> General Notary services</h4>
-                  <p>From $10.00</p>
+            
                 </div>
                 <p>MVD Title/Bill of Sale, Wills, Trusts, Certified copies, POA's etc. Can perform in hospital, nursing home, jail, etc. Call for quote</p>
             </article>
             <article>
                 <div>
                   <h4> <FaStar style={star}/> Printing Services</h4>
-                  <p>From $0.25</p>
+                
                 </div>
                 <p>Dual tray laser printer quality. Black& white copies only. Will deliver documents for 30 cents per mile
                     After hours notarizations</p>
